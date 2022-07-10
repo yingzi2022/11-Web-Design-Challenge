@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Weather Location Analysis</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="./static/css/style.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+<header>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="btn" style = "background-color: #e3f2fd;"  href="./Latitude.html"><b>Latitude</b></a>
+        <!-- <a class="navbar-brand" href="./Latitude.html"><b>Latitude</b></a> -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">Plot</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                <li><a class="dropdown-item" href="./Max Temperature">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="./Humidity">Humidity</a></li>
+                <li><a class="dropdown-item" href="./Cloudiness">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="./Wind Speed">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./Data">Data</a>
+            </li>
+
+            <div class="navbar-collapse collapse show" id="navbarsExample09" style ="">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./Visualization">Visualization</a>
+                </li>
+
+              </ul>
+            </div>
+          </ul>    
+        </div>
+      </div>
+    </nav>
+</header>
+
+<main>
+<!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="modal-content" style = "background-color:rgb(229, 225, 225);">
+    <!-- Three columns of text below the carousel -->
+    <div class="container-center row mt-5">      
+      <!--left colmn-->
+      <div class="col-lg-8">      
+        <!-- <article class="description-content">
+          <h1 class="description-header" style = "color:aqua";>Summary: Latitude vs. X</h1>
+          <hr class="description-hr"/>
+          <img src="Resources/assets/images/Fig1.png" alt="" id="description-fig1"/>
+            <p>The purpose of this project was to analyze how weather changes 
+               as you get closer to the equator. To accomplish this analysis, we 
+               first pulled data from the OpenWeatherMap API to assemble a 
+               dataset on over 500 cities.
+            </p>
+            <br>
+            <p>After assembling the dataset, we used Matplotlib to plot various 
+               aspects of the weather vs. latitude. Factors we looked at included: 
+               temperature, cloudiness, wind speed, and humidity. This site provides the source data and 
+               visulaizations created as part of the analysis, as well as explanations and descriptions of any 
+               trends and correlations witnessed.</p> -->
+
+        <h1 class="description-header" style = "color:aqua";>Summary: Latitude vs. X</h1>
+          <dl class = "container row mt-5">
+            <dt class = "col-sm-4">
+              <img src="Resources/assets/images/Fig1.png" alt="" id=""/>
+            </dt>
+            <dd class ="col-sm-8">
+              <p>The purpose of this project was to analyze how weather changes 
+                as you get closer to the equator. To accomplish this analysis, we 
+                first pulled data from the OpenWeatherMap API to assemble a 
+                dataset on over 500 cities.
+            </p>
+            <br>
+            <p>After assembling the dataset, we used Matplotlib to plot various 
+                aspects of the weather vs. latitude. Factors we looked at included: 
+                temperature, cloudiness, wind speed, and humidity. This site provides the source data and 
+                visulaizations created as part of the analysis, as well as explanations and descriptions of any 
+                trends and correlations witnessed.</p>
+            </dd>
+          </dl>               
+
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-sm-4">
+          <div class ="row">
+              <div class="col-sm-6">
+                <img src="Resources/assets/images/Fig1.png">
+              </div>
+              <div class="col-sm-6">
+                <img src="Resources/assets/images/Fig2.png">
+              </div>
+              <div class="col-sm-6">
+                <img src="Resources/assets/images/Fig3.png">
+              </div>
+              <div class="col-sm-6">
+                <img src="Resources/assets/images/Fig4.png">
+              </div>
+            </div>
+        </div>        
+                  
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
