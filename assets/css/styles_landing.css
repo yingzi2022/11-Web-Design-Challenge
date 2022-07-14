@@ -1,10 +1,10 @@
 
 h1 {
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .btn {
-  font-size: 20px;
+  font-size: 25px;
   background-color:rgb(19, 154, 159);
   color: white;
   max-height:50%;
@@ -22,6 +22,25 @@ h1 {
   padding-left: 10px;
 }
 
+#box1 {
+  background-color: aliceblue;
+}
+
+#description-image {
+  position:absolute;
+  left: 10px;
+  padding-right: 50px;
+  width: 200px;
+  height: 150px;
+}
+
+.col-sm-8 {
+  margin-top: 5px;
+  position:absolute;
+  padding:2px;
+  background-color:whitesmoke;
+}
+
 .col-sm-4 {
   position: relative;
   width:540px;
@@ -34,4 +53,9 @@ h1 {
 .col-sm-6 {
   width:240px;
   height:160px;
+}
+
+.imageNav-photo {
+  width:42px;
+  height: 42px;
 }

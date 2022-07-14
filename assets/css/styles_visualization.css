@@ -1,10 +1,10 @@
 
 h1 {
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .btn {
-  font-size: 20px;
+  font-size: 25px;
   background-color:rgb(19, 154, 159);
   color: white;
   max-height:50%;
@@ -17,21 +17,26 @@ h1 {
   background-color:blue;
 }
 
-#navbarNavDropdown {
+/* #navbarNavDropdown {
   font-size: 25px;
   padding-left: 10px;
-}
+} */
 
-.col-sm-4 {
+.col-sm-8 {
   position: relative;
   width:540px;
   height:360px;
-  border:3px solid lightgrey;
-  padding-right: 2px;
-  padding-left: 2px;
+  padding-left: 120px;
+  padding-right: 20px;
 }
 
-.col-sm-6 {
+.col-sm-4 {
   width:240px;
   height:160px;
+}
+
+#fig1 {
+  width:150px;
+  height:200px;
+  padding: 150px;
 }
